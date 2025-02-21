@@ -4,7 +4,8 @@
   "description": "social network for developers",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+    "server": "nodemon server"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,19 @@
   "bugs": {
     "url": "https://github.com/rajnishshk/DevCircle/issues"
   },
-  "homepage": "https://github.com/rajnishshk/DevCircle#readme"
+  "homepage": "https://github.com/rajnishshk/DevCircle#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "config": "^3.3.12",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "gravatar": "^1.8.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.10.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  }
 }
