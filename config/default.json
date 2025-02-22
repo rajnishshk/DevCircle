@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://Rajnish123:Rajnish123@devcircle.cafg1.mongodb.net/?retryWrites=true&w=majority&appName=DevCircle",
+  "jwtSecret":"mysecrettoken"
+}
