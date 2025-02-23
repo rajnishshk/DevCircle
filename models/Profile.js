@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const profileSchema = mongoose.Schema({
+const ProfileSchema = mongoose.Schema({
   user:{
     type: mongoose.Schema.Types.ObjectId,
     ref:'user'
@@ -110,4 +110,4 @@ const profileSchema = mongoose.Schema({
   }
 })
 
-module.exports = Profile = mongoose.model(Profile,profileSchema);
+module.exports = Profile = mongoose.model('profile',ProfileSchema);
