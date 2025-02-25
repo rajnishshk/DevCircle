@@ -5,7 +5,7 @@ const { check, validationResult } = require('express-validator');
 const auth = require('../../middleware/auth');
 
 const Profile = require('../../models/Profile');
-const User = require('../../models/Users');
+const User = require('../../models/User');
 const config = require('config');
 
 // @route     GET api/profile/me
@@ -169,7 +169,7 @@ router.put('/experience',[ auth,[
 async(req,res)=>{
   const errors = validationResult(req);
   if(!errors.isEmpty()){
-    res.status(400).json({ errors: errors.array()})
+   return res.status(400).json({ errors: errors.array()})
   }
 
   const {
@@ -239,7 +239,7 @@ router.put('/education',[auth,[
 async (req,res)=>{
 const errors = validationResult(req);
 if(!errors.isEmpty()){
-  res.status(400).json({ errors:errors.array()});
+  return res.status(400).json({ errors:errors.array()});
 }
 const {
   school,
