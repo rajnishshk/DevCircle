@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://Rajnish123:Rajnish123@devcircle.cafg1.mongodb.net/?retryWrites=true&w=majority&appName=DevCircle",
-  "jwtSecret":"mysecrettoken"
+  "jwtSecret":"mysecrettoken",
+  "githubClientId":"Ov23liBA3LDCrbfqjXfs",
+  "githubSecret":"37b20fe3e9fef5bffd16631f23d8b8186c9ca58f"
 }
