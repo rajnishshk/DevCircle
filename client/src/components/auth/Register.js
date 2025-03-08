@@ -1,5 +1,6 @@
 import React from 'react';
 import { Fragment , useState } from 'react';
+import { connect } from 'react-redux';
 
 const Register = () => {
   const [ formData, setFromData] = useState({
@@ -69,4 +70,4 @@ const Register = () => {
     </Fragment> 
     }
 
-export default Register
+export default connect()(Register)
